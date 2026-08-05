@@ -4,14 +4,16 @@ body {
     background-color: #fff;
     font-family: "Space Grotesk", sans-serif;
     margin: 0;
+    max-width: 1440px;
+    margin: auto;
 }
 
-/* .main {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-} */
+    flex-wrap: wrap;
+}
 
 .landing {
     display: flex;
@@ -19,17 +21,21 @@ body {
     justify-content: space-between;
     margin-top: 60px;
     gap: 70px;
+    flex-wrap: wrap;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
     margin: 0px 100px;
+    flex-wrap: wrap;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    margin: 0px 100px;
+    flex-wrap: wrap;
 }
 
 .navigation .main_logo {
@@ -48,6 +54,7 @@ body {
     font-size: 20px;
     gap: 40px;
     font-style: normal;
+    flex-wrap: wrap;
 }
 
 .btn_quote {
@@ -71,9 +78,8 @@ a {
     justify-content: space-between;
     gap: 35px;
     color: #000000;
-    width: 531px;
-    height: 481px;
-    margin: 0px 100px;
+    text-align: left;
+    flex-wrap: wrap;
 }
 
 .mission .head {
@@ -111,50 +117,353 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0px 100px;
+    flex-wrap: wrap;
 }
 
-.first {
-    position: relative;
-    width: 124.11px;
-    height: 48px;
-    mix-blend-mode: luminosity;
-}
-
-.first .one {
-    position: absolute;
-    top: 12px;
-}
-
-.first .one_one {
-    position: absolute;
-    top: 31.91px;
-    left: 17.38px;
-}
-
-.third {
-    position: relative;
-    width: 128.63px;
-    height: 48px;
-    mix-blend-mode: luminosity;
-}
-
-.third .three {
-    position: absolute;
-    top: 13.11px;
-}
-
-.third .three_three {
-    position: absolute;
-    top: 8px;
-    left: 82.59px;
-}
-
+.first,
 .second,
+.third,
 .fourth,
 .fifth,
 .sixth {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo {
+    height: auto;
+    max-width: 100%;
     mix-blend-mode: luminosity;
+}
+
+.logo:hover {
+    mix-blend-mode: normal;
+}
+
+.illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    max-width: 100%
+}
+
+.illustrate {
+    height: auto;
+    max-width: 100%;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 50px 100px 0px 100px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.services .green_serv {
+    font-size: 40px;
+    background: #B9FF66;
+    padding: 0px 7px;
+    gap: 10px;
+    border-radius: 7px;
+
+}
+
+.green_serv_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 70px;
+    gap: 40px;
+}
+
+.cards1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+
+/* Первая карточка первого блока */
+.first_card {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    padding: 50px;
+    background: #F3F3F3;
+    border: 1px solid #191A23;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px #191a23;
+}
+
+.first_card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 93px;
+}
+
+.first_card_text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.search {
+    background: #B9FF66;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.optimization {
+    background: #B9FF66;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.first_card_link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.first_card_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Вторая карточка первого блока */
+.second_card {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding: 50px;
+    background: #B9FF66;
+    border: 1px solid #191A23;
+    border-radius: 45px;
+    gap: 50px;
+    box-shadow: 0px 5px 0px #191a23;
+}
+
+.second_card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 93px;
+}
+
+.second_card_text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.pay {
+    background: #fff;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.advertising {
+    background: #fff;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.second_card_link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.second_card_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+
+/* Первая карточка второго блока */
+.first_card_2 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    padding: 50px;
+    background: #191A23;
+    border: 1px solid #191A23;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px #B9FF66;
+}
+
+.first_card_info_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 93px;
+}
+
+.first_card_text_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.social {
+    background: #fff;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.marketing {
+    background: #fff;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.first_card_link_2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+.first_card_image_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Вторая карточка второго блока */
+.second_card_2 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    padding: 50px;
+    background: #F3F3F3;
+    border: 1px solid #191A23;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px #191A23;
+}
+
+.second_card_info_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 93px;
+}
+
+.second_card_text_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.email {
+    background: #B9FF66;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.emarketing {
+    background: #B9FF66;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.second_card_link_2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.second_card_image_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
