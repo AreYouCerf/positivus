@@ -3,7 +3,7 @@
 body {
     background-color: #fff;
     font-family: "Space Grotesk", sans-serif;
-    margin: 0;
+    padding: 0;
     max-width: 1440px;
     margin: auto;
 }
@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 60px;
+    margin: 60px 0px 100px 0px;
     gap: 70px;
     flex-wrap: wrap;
 }
@@ -58,6 +58,7 @@ body {
 }
 
 .btn_quote {
+    box-sizing: border-box;
     font: inherit;
     background: #fff;
     padding: 20px 35px 20px 35px;
@@ -67,9 +68,27 @@ body {
     gap: 10px;
 }
 
+.btn_quote:hover {
+    cursor: pointer;
+    background: #191A23;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
 a {
     color: #000000;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation_link:hover {
+    text-decoration: underline solid 2px;
+    background: #B9FF66;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .mission {
@@ -110,6 +129,14 @@ a {
     font-family: inherit;
     font-size: 20px;
     font-weight: 400;
+}
+
+.book_consult:hover {
+    cursor: pointer;
+    background: #B9FF66;
+    color: #191A23;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .logotypes {
@@ -158,7 +185,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 50px 100px 0px 100px;
+    margin: 0px 100px 60px 100px;
     gap: 40px;
     flex-wrap: wrap;
 }
@@ -169,7 +196,7 @@ a {
     padding: 0px 7px;
     gap: 10px;
     border-radius: 7px;
-
+    margin: 0;
 }
 
 .green_serv_text {
@@ -177,16 +204,21 @@ a {
     font-size: 18px;
     line-height: 1;
     letter-spacing: 0;
+    margin: 0;
 }
 
 .cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-bottom: 60px;
     gap: 40px;
 }
 
+
+
+
+/* Первый блок карточек */
 .cards1 {
     display: flex;
     justify-content: space-between;
@@ -247,12 +279,21 @@ a {
 }
 
 .first_card_link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 15px;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.first_card_link:hover {
+    background: #191A23;
+    transform: scale(1.2);
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 .first_card_image {
@@ -313,12 +354,21 @@ a {
 }
 
 .second_card_link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 15px;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.second_card_link:hover {
+    background: #191A23;
+    color: #fff;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
 }
 
 .second_card_image {
@@ -327,6 +377,10 @@ a {
     justify-content: center;
 }
 
+
+
+
+/* Второй блок карточек */
 .cards2 {
     display: flex;
     justify-content: space-between;
@@ -387,13 +441,22 @@ a {
 }
 
 .first_card_link_2 {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 15px;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0;
     color: #fff;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.first_card_link_2:hover {
+    background: #fff;
+    color: black;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
 }
 
 .first_card_image_2 {
@@ -454,15 +517,189 @@ a {
 }
 
 .second_card_link_2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.second_card_link_2:hover {
+    background: #191A23;
+    color: #fff;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.second_card_image_2 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Третий блок карточек */
+.cards3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+
+/* Первая карточка третьего блока */
+.first_card_3 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    padding: 50px;
+    background: #B9FF66;
+    border: 1px solid #191A23;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px #191A23;
+}
+
+.first_card_info_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 93px;
+}
+
+.first_card_text_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.content {
+    background: #fff;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.creation {
+    background: #fff;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.first_card_link_3 {
+    display: inline-flex;
     align-items: center;
     gap: 15px;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0;
+    border-radius: 7px;
+    padding: 7px;
 }
 
-.second_card_image_2 {
+.first_card_link_3:hover {
+    background: #191A23;
+    color: #fff;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.first_card_image_3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Вторая карточка третьего блока */
+.second_card_3 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    padding: 50px;
+    background: #191A23;
+    border: 1px solid #191A23;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px #B9FF66;
+}
+
+.second_card_info_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 93px;
+}
+
+.second_card_text_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.analytics {
+    background: #B9FF66;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.tracking {
+    background: #B9FF66;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.second_card_link_3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.second_card_link_3:hover {
+    background: #fff;
+    color: #000000;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.second_card_image_3 {
     display: flex;
     align-items: center;
     justify-content: center;
