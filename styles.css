@@ -85,7 +85,7 @@ a {
 .navigation_link:hover {
     text-decoration: underline solid 2px;
     background: #B9FF66;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 7px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -281,19 +281,20 @@ a {
 .first_card_link {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .first_card_link:hover {
     background: #191A23;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #fff;
-    transition: all 0.3s ease;
 }
 
 .first_card_image {
@@ -360,15 +361,15 @@ a {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0;
-    border-radius: 20px;
-    padding: 7px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .second_card_link:hover {
     background: #191A23;
     color: #fff;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .second_card_image {
@@ -448,15 +449,15 @@ a {
     font-size: 20px;
     letter-spacing: 0;
     color: #fff;
-    border-radius: 20px;
-    padding: 7px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .first_card_link_2:hover {
     background: #fff;
     color: black;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .first_card_image_2 {
@@ -524,15 +525,15 @@ a {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0;
-    border-radius: 20px;
-    padding: 7px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .second_card_link_2:hover {
     background: #191A23;
     color: #fff;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .second_card_image_2 {
@@ -611,15 +612,15 @@ a {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0;
-    border-radius: 20px;
-    padding: 7px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .first_card_link_3:hover {
     background: #191A23;
     color: #fff;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .first_card_image_3 {
@@ -688,15 +689,15 @@ a {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0;
-    border-radius: 20px;
-    padding: 7px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .second_card_link_3:hover {
     background: #fff;
     color: #000000;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .second_card_image_3 {
