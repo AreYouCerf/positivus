@@ -66,14 +66,13 @@ body {
     border-radius: 14px;
     border-color: #191A23;
     gap: 10px;
+    transition: all 0.3s ease;
 }
 
 .btn_quote:hover {
     cursor: pointer;
     background: #191A23;
-    font-weight: 500;
     color: #fff;
-    transition: all 0.3s ease;
 }
 
 a {
@@ -82,13 +81,15 @@ a {
     cursor: pointer;
 }
 
+.navigation_link {
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
 .navigation_link:hover {
     text-decoration: underline solid 2px;
     background: #B9FF66;
-    /* padding: 10px; */
     border-radius: 7px;
-    font-weight: 500;
-    transition: all 0.3s ease;
 }
 
 .mission {
@@ -129,6 +130,7 @@ a {
     font-family: inherit;
     font-size: 20px;
     font-weight: 400;
+    transition: all 0.3s ease;
 }
 
 .book_consult:hover {
@@ -136,7 +138,6 @@ a {
     background: #B9FF66;
     color: #191A23;
     font-weight: 500;
-    transition: all 0.3s ease;
 }
 
 .logotypes {
