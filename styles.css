@@ -882,66 +882,66 @@ a {
     margin: 0;
 }
 
-.process_block {
+.accordion_consult {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0px 100px 30px 100px;
-    background: #F3F3F3;
-    border: 1px solid #191A23;
-    border-radius: 45px;
-    padding: 41px 60px;
-    box-shadow: 0px 5px 0px #191A23;
     gap: 30px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    margin: 0px 100px 30px 100px;
+    box-shadow: 0px 5px 0px #191a23;
+    background: #F3F3F3;
 }
 
-.process_block_butt {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    font-family: inherit;
-}
-
-.process_block_label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-.process_block_number {
+.accordion_number {
     font-size: 60px;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: 0;
 }
 
-.process_block_info {
+.accordion_name {
     font-size: 30px;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: 0;
 }
 
-.process_block_p {
-    /* display: none; */
-    overflow: hidden;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: 0;
+.accordion_number_name {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
 }
 
-.process_block_p:active {
+.accordion_consult_butt {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 45px;
+    background: transparent;
+    cursor: pointer;
+    padding: 41px 60px;
+    font-family: inherit;
+    z-index: 99;
+    position: relative;
+    z-index: 100;
+}
+
+.accordion_consult_info {
+    display: none;
+    margin: 0px 60px 41px 60px;
+    border-top: 2px solid #191A23;
+}
+
+.accordion_consult_info.show {
     display: block;
 }
 
-.process_block_p hr {
-    height: 2px;
-    border: none;
-    background-color: #191A23;
+.accordion_number_name,
+.accordion_number,
+.accordion_name,
+.accordion_image {
+    z-index: 99;
 }
