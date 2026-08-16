@@ -1,12 +1,31 @@
-const processButt = document.querySelector('.accordion_consult_butt');
-const processBlock = document.querySelector('.accordion_consult_info');
+const accordionButtons = document.querySelectorAll('.accordion_button');
 
-processButt.addEventListener('click', function () {
-    processBlock.classList.toggle('show');
-});
+accordionButtons.forEach(accordionButton => {
+    accordionButton.addEventListener('click', () => {
+        const accordionHeader = accordionButton.closest('.accordion_header');
+        if (!accordionHeader) return;
 
-window.addEventListener('click', function (event) {
-    if (!event.target.matches('.accordion_consult_butt')) {
-        processBlock.classList.remove('show');
-    }
+        const accordionInfo = accordionHeader.querySelector('.accordion_info');
+        if (!accordionInfo) return;
+
+        const isActive = accordionButton.classList.contains('active');
+
+        accordionButtons.forEach(button => {
+            button.classList.remove('active');
+            const a = button.closest('.accordion_header');
+            if (a) {
+                const b = a.querySelector('.accordion_info');
+                if (b) b.classList.remove('show');
+            }
+        });
+
+        if (isActive) {
+            accordionButton.classList.remove('active');
+            accordionInfo.classList.remove('show');
+            return;
+        }
+
+        accordionButton.classList.add('active');
+        accordionInfo.classList.add('show');
+    });
 });

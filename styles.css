@@ -856,11 +856,15 @@ a {
     margin: 0;
 }
 
+.processes {
+    margin: 0px 100px;
+}
+
 .our_working_process {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 0px 100px 60px 100px;
+    margin-bottom: 60px;
     gap: 40px;
     flex-wrap: wrap;
 }
@@ -882,66 +886,85 @@ a {
     margin: 0;
 }
 
-.accordion_consult {
+.accordion_header {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 30px;
-    border-radius: 45px;
+    margin-bottom: 30px;
     border: 1px solid #191A23;
-    margin: 0px 100px 30px 100px;
-    box-shadow: 0px 5px 0px #191a23;
+    border-radius: 45px;
     background: #F3F3F3;
+    transition: background 0.5s ease;
 }
 
-.accordion_number {
-    font-size: 60px;
-    font-weight: 500;
+.accordion_header:has(.active) {
+    background: #B9FF66;
+}
+
+.accordion_divide {
+    box-sizing: border-box;
+    border-top: 2px solid #191A23;
+
+}
+
+.accordion_button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    border-radius: 45px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.accordion_icon {
+    width: 58px;
+    height: 58px;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+.accordion_button.active .accordion_icon {
+    transform: rotate(720deg);
+}
+
+.accordion_info {
+    box-sizing: border-box;
+    padding: 0px 60px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.accordion_info.show {
+    max-height: 500px;
+}
+
+.accordion_info p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 100%;
     letter-spacing: 0;
 }
 
-.accordion_name {
+.accordion_title {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    gap: 25px;
     font-size: 30px;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: 0;
 }
 
-.accordion_number_name {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 25px;
-}
-
-.accordion_consult_butt {
-    display: flex;
-    justify-content: space-between;
-    border: none;
-    border-radius: 45px;
-    background: transparent;
-    cursor: pointer;
-    padding: 41px 60px;
-    font-family: inherit;
-    z-index: 99;
-    position: relative;
-    z-index: 100;
-}
-
-.accordion_consult_info {
-    display: none;
-    margin: 0px 60px 41px 60px;
-    border-top: 2px solid #191A23;
-}
-
-.accordion_consult_info.show {
-    display: block;
-}
-
-.accordion_number_name,
-.accordion_number,
-.accordion_name,
-.accordion_image {
-    z-index: 99;
+.accordion_number {
+    font-size: 60px;
 }
