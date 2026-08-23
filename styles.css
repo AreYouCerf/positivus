@@ -941,7 +941,7 @@ a {
 }
 
 .accordion_info.show {
-    max-height: 500px;
+    max-height: 1000px;
 }
 
 .accordion_info p {
