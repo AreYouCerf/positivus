@@ -8,18 +8,11 @@ body {
     margin: auto;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .landing {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 60px 0px 100px 0px;
+    margin: 0px 0px 100px 0px;
     gap: 70px;
     flex-wrap: wrap;
 }
@@ -27,11 +20,11 @@ body {
 .navigation {
     display: flex;
     justify-content: space-between;
-    margin: 0px 100px;
+    margin: 60px 100px;
     flex-wrap: wrap;
 }
 
-.header {
+.header_mission {
     display: flex;
     justify-content: space-between;
     margin: 0px 100px;
