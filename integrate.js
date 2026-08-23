@@ -12,6 +12,7 @@ accordionButtons.forEach(accordionButton => {
 
         accordionButtons.forEach(button => {
             button.classList.remove('active');
+            setIcon(button, 'svg/plus.svg')
             const a = button.closest('.accordion_header');
             if (a) {
                 const b = a.querySelector('.accordion_info');
@@ -27,5 +28,11 @@ accordionButtons.forEach(accordionButton => {
 
         accordionButton.classList.add('active');
         accordionInfo.classList.add('show');
+        setIcon(accordionButton, 'svg/minus.svg')
     });
 });
+
+function setIcon(button, file) {
+    const icon = button.querySelector('.accordion_icon img');
+    if (icon) icon.src = file;
+}
