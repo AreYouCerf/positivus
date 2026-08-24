@@ -995,7 +995,7 @@ a {
 
 .team_card_person {
     box-sizing: border-box;
-    display: inline-flex;
+    display: flex;
     justify-content: start;
     position: relative;
     gap: 20px;
