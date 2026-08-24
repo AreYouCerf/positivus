@@ -963,7 +963,7 @@ a {
 }
 
 .team {
-    margin: 0;
+    margin: 0px 100px 60px 100px;
     padding: 0;
 }
 
@@ -971,7 +971,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 0px 100px 60px 100px;
+    margin: 0px 0px 60px 0px;
     gap: 40px;
     flex-wrap: wrap;
 }
@@ -999,6 +999,7 @@ a {
     justify-content: start;
     position: relative;
     gap: 20px;
+    width: 100%;
 }
 
 .team_card_person_title {
@@ -1050,7 +1051,7 @@ a {
 .team_cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0px 100px 30px 100px;
+    margin: 0px 0px 28px 0px;
     gap: 40px;
 }
 
@@ -1080,4 +1081,33 @@ a {
 
 .team_card_social_icon:hover {
     transform: scale(1.1);
+}
+
+.team_btn {
+    display: flex;
+    justify-content: end;
+}
+
+.team_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    padding: 20px 35px;
+    background: #191A23;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.team_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: #B9FF66;
+    color: #000000;
 }
