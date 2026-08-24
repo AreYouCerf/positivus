@@ -850,7 +850,7 @@ a {
 }
 
 .processes {
-    margin: 0px 100px;
+    margin: 0px 100px 60px 100px;
 }
 
 .our_working_process {
@@ -960,4 +960,124 @@ a {
 
 .accordion_number {
     font-size: 60px;
+}
+
+.team {
+    margin: 0;
+    padding: 0;
+}
+
+.team_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px 100px 60px 100px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team_info_green_title {
+    font-size: 40px;
+    background: #B9FF66;
+    padding: 0px 7px;
+    gap: 10px;
+    border-radius: 7px;
+    margin: 0;
+}
+
+.team_info_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.team_card_person {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: start;
+    position: relative;
+    gap: 20px;
+}
+
+.team_card_person_title {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+}
+
+.team_card_person_title h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.team_card_person_title p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.team_card_person_photo {
+    width: 106px;
+    height: 103px;
+}
+
+.team_limkedin {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.team_card {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    border: 1px solid #191A23;
+    padding: 40px 35px;
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px #191A23;
+}
+
+.team_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 100px 30px 100px;
+    gap: 40px;
+}
+
+.team_card_person_info p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: 0;
+}
+
+.team_card_line {
+    border-top: 1px solid #191A23;
+}
+
+.team_card_social_icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.team_card_social_icon:hover {
+    transform: scale(1.1);
 }
