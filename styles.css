@@ -1179,17 +1179,17 @@ a {
     background-image: url('svg/Bubble.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 40px;
+    padding: 30px 30px 40px 30px;
     box-sizing: border-box;
     min-width: 100%;
 }
 
 .slide p {
     color: #fff;
+    margin: 0;
 }
 
 .slides {
     display: flex;
-    gap: 0;
-    transition: transform 0.4s ease;
+    overflow: hidden;
 }
