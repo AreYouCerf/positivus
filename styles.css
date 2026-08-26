@@ -1180,6 +1180,8 @@ a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 40px;
+    box-sizing: border-box;
+    min-width: 100%;
 }
 
 .slide p {
@@ -1188,5 +1190,6 @@ a {
 
 .slides {
     display: flex;
-    gap: 60px;
+    gap: 0;
+    transition: transform 0.4s ease;
 }
