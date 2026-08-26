@@ -1145,8 +1145,10 @@ a {
 
 .testimonials_slider {
     background: #191A23;
-    padding: 60px 0px;
+    padding: 60px 0px 30px 0px;
     overflow: hidden;
+    border: none;
+    border-radius: 45px;
 }
 
 .button_previous,
@@ -1165,8 +1167,8 @@ a {
 }
 
 .slider_navigation img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .slider_navigation {
@@ -1175,21 +1177,42 @@ a {
     align-items: center;
 }
 
-.slide {
-    background-image: url('svg/Bubble.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 30px 30px 40px 30px;
-    box-sizing: border-box;
-    min-width: 100%;
+.slides {
+    display: flex;
 }
 
-.slide p {
+.slide {
+    min-width: 100%;
+    background: none;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.slide_bubble {
+    width: min(606px, 92%);
+    background-image: url('svg/Bubble.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 40px 40px 70px 40px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.slide_bubble p {
+    font-size: 1.125rem;
     color: #fff;
     margin: 0;
 }
 
-.slides {
-    display: flex;
-    overflow: hidden;
+.slide_bubble_person h4 {
+    font-size: 1.25rem;
+    color: #B9FF66;
+    margin: 0;
+}
+
+.slide_bubble_person span {
+    font-size: 1rem;
+    color: #fff;
 }
