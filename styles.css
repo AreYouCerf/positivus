@@ -1138,81 +1138,174 @@ a {
 .testimonials_info_text {
     font-weight: 400;
     font-size: 18px;
-    line-height: 1;
+    line-height: 100%;
     letter-spacing: 0;
     margin: 0;
 }
 
-.testimonials_slider {
-    background: #191A23;
-    padding: 60px 0px 30px 0px;
-    overflow: hidden;
-    border: none;
-    border-radius: 45px;
+ul {
+    padding-left: 0;
+    margin: 0;
 }
 
-.button_previous,
-.button_next {
-    box-sizing: border-box;
-    display: inline-flex;
-    padding: 0;
+li {
+    list-style-type: none;
+}
+
+blockquote {
     margin: 0;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    row-gap: 114px;
+    padding-top: 84px;
+    padding-bottom: 58px;
+    color: #fff;
+    background-color: #191A23;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.reviews_slider_list {
+    display: flex;
+    column-gap: 50px;
+    scroll-snap-type: mandatory;
+    overflow-x: scroll;
+    margin-left: calc(606px / 2 * -1);
+}
+
+.reviews_slider_list::-webkit-scrollbar {
+    display: none;
+}
+
+.reviews_slider_item {
+    scroll-snap-align: start;
+    min-width: 606px;
+}
+
+.review_card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+.review_card_body {
+    border: 1px solid #B9FF66;
+    border-radius: 45px;
+    padding: 48px 52px 52px;
+    position: relative;
+    font-size: 1rem;
+
+    &::after {
+        width: 36px;
+        height: 36px;
+        content: '';
+        border: inherit;
+        transform: rotate(45deg);
+        position: absolute;
+        background-color: #191A23;
+        top: 100%;
+        left: 52px;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        translate: 0 -50%;
+    }
+}
+
+.review_card_footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: calc(52px + 36px / 2);
+}
+
+.review_card_footer cite {
+    font-style: normal;
+}
+
+.review_card_name {
+    color: #B9FF66;
+    font-size: 1.125rem;
+}
+
+.review_card_company {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.reviews_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 564px;
+    margin-inline: auto;
+}
+
+.reviews_arrow_button {
     background: transparent;
     border: none;
-}
-
-.button_previous:hover,
-.button_next:hover {
-    cursor: pointer;
-}
-
-.slider_navigation img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-}
-
-.slider_navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.slides {
-    display: flex;
-}
-
-.slide {
-    min-width: 100%;
-    background: none;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    flex-direction: column;
-}
-
-.slide_bubble {
-    width: min(606px, 92%);
-    background-image: url('svg/Bubble.svg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 40px 40px 70px 40px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-
-.slide_bubble p {
-    font-size: 1.125rem;
-    color: #fff;
+    padding: 0;
     margin: 0;
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    &[disabled] {
+        color: #FFFFFF;
+        cursor: not-allowed;
+    }
+
+    &[active] {
+        cursor: pointer;
+    }
 }
 
-.slide_bubble_person h4 {
-    font-size: 1.25rem;
-    color: #B9FF66;
+.reviews_arrow_button[active]:hover {
+    svg path {
+        fill: #B9FF66;
+    }
+}
+
+.pagination {}
+
+.pagination_list {
+    display: flex;
+}
+
+.pagination_button {
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    padding: 0;
     margin: 0;
+
+    svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    &[active] {
+        svg path {
+            fill: #B9FF66;
+        }
+    }
 }
 
-.slide_bubble_person span {
-    font-size: 1rem;
-    color: #fff;
+.pagination_button:hover {
+    svg path {
+        fill: #B9FF66;
+    }
 }
